@@ -1,73 +1,45 @@
 
 <% include ./common/header.html %>
 
-<body>
-    <nav class="navbar navbar-expand navbar-dark bg-primary">
-        <!-- Navbar content -->
-        <a class="navbar-brand" href="#">SiteName</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/checkServiceability">Check Serviceability</a>
-                </li>
-                <li class="nav-item dropdown pull-right">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Welcome, User!
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item help" href="#">Edit Profile</a>
-                        <a class="dropdown-item help" href="#">Logout</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <br/>
-    <div class="container">
-        <h4 class="text-center">Select the serviceable area  <span><button class="btn btn-default btn-sm help">Help</button></span></h4>
-        <hr/>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div id="map" style="min-height: 500px"></div>
-            </div>
+<div class="container">
+    <h4 class="text-center">Select the serviceable area  <span><button class="btn btn-default btn-sm help">Help</button></span></h4>
+    <hr/>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div id="map" style="min-height: 500px"></div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <h5>Selected Regions</h5>
-                <table class="table table-responsive table-striped" id="selectedRegions">
-                    <thead>
-                        <tr>
-                            <th>Index</th>
-                            <th>Type Of Selection</th>
-                            <th>Coordinates</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tbody">
-                        <tr id="noData">
-                            <td class="col-md-12" colspan="4" align="middle">
-                                No data.              
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <button id="saveSelection" class="btn btn-success">Save Selection</button>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 text-right">
-                <button id="clearSelection" class="btn btn-primary">Clear Selection</button>
-            </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h5>Selected Regions</h5>
+            <table class="table table-responsive table-striped" id="selectedRegions">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Type Of Selection</th>
+                        <th>Coordinates</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr id="noData">
+                        <td class="col-md-12" colspan="4" align="middle">
+                            No data.              
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <button id="saveSelection" class="btn btn-success">Save Selection</button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 text-right">
+            <button id="clearSelection" class="btn btn-primary">Clear Selection</button>
         </div>
     </div>
+</div>
 </body>
 
 <script type="text/javascript" src="index.js"></script>

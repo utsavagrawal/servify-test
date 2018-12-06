@@ -5,10 +5,10 @@ latLngs = [];
 
 function initMap() {
 
-    var latlng = new google.maps.LatLng(19.0821978, 72.7410998);
+    var latlng = new google.maps.LatLng(19.0821978, 72.9410998);
     var map = new google.maps.Map(document.getElementById('map'), {
         center: latlng,
-        zoom: 6
+        zoom: 11
     });
     drawingManager = new google.maps.drawing.DrawingManager({
         drawingControl: true,

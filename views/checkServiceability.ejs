@@ -1,40 +1,26 @@
 
 <% include ./common/header.html %>
 
+
 <div class="container">
-    <h4 class="text-center">Drop a marker <span><button class="btn btn-default btn-sm help">Help</button></span></h4>
+    <div class="row">
+        <h5 class="text-left">Drop a marker <span><button class="btn btn-default btn-sm help">Help</button></span></h5>
+    </div>
     <hr/>
+
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div id="map" style="min-height: 500px"></div>
         </div>
     </div>
-</div>
-<div class="container">
+    <br/>
+    <hr/>
     <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <h5>Selected Regions</h5>
-            <table class="table table-responsive table-striped" id="selectedRegions">
-                <thead>
-                    <tr>
-                        <th>Index</th>
-                        <th>Type Of Selection</th>
-                        <th>Coordinates</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="tbody">
-                    <tr id="noData">
-                        <td class="col-md-12" colspan="4" align="middle">
-                            No data.              
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <h5 class="text-right"><span>Show Selected Areas <input type="checkbox" class="checkbox"></span></h5>
     </div>
 </div>
-
+<!--<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>-->
 <script type="text/javascript" src="checkServiceability.js"></script>
 
 <% include ./common/footer.html %>
