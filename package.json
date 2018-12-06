@@ -1,0 +1,14 @@
+{
+  "name": "servify-test",
+  "version": "0.0.1",
+  "description": "Servify Test",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
